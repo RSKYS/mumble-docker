@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mumble-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "64738:64738/udp"
+      - "64738:64738"
+#    volumes:
+#      - ./data:/data
+    environment:
+      - MUMBLE_ACCEPT_UNKNOWN_SETTINGS=true
+      - MUMBLE_SUPERUSER_PASSWORD=say0n@r11
+      - MUMBLE_VERBOSE=false
