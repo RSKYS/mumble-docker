@@ -5,6 +5,4 @@ ENV MUMBLE_ACCEPT_UNKNOWN_SETTINGS=true \
     MUMBLE_VERBOSE=false \
     MUMBLE_CUSTOM_CONFIG_FILE=/data/mumble_server_config.ini
 
-COPY ./data/mumble_server_config.ini /data/mumble_server_config.ini
-
-#CMD ["mumble-server"]
+#COPY ./data/mumble_server_config.ini /data/mumble_server_config.ini

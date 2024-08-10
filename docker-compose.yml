@@ -8,8 +8,8 @@ services:
     ports:
       - "64738:64738/udp"
       - "64738:64738"
-#    volumes:
-#      - ./data:/data
+    volumes:
+      - ./data:/data:rw
     environment:
       - MUMBLE_ACCEPT_UNKNOWN_SETTINGS=true
       - MUMBLE_SUPERUSER_PASSWORD=say0n@r11
